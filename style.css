@@ -1,0 +1,202 @@
+/*
+  ROOT
+*/
+
+:root {
+  --bgColor: #000;
+  --text: #fff;
+  --span: #e6fa36;
+}
+
+/*
+  GERAL
+*/
+
+::-webkit-scrollbar {
+  width: 0;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  color: var(--text);
+  scroll-behavior: auto;
+  box-sizing: border-box;
+  font-family: 'Lato', sans-serif;
+  background-color: var(--bgColor);
+}
+
+/*
+  HEADER
+*/
+
+header {
+  display: flex;
+  margin-top: 0.3125rem;
+  align-items: center;
+  flex-direction: column;
+}
+
+header img:nth-child(1) {
+  width: 15.625rem;
+  margin-bottom: 0.625rem;
+}
+
+header img:nth-child(2) {
+  width: 20rem;
+  margin-block: 0.9375rem;
+}
+
+/*
+  TEXT
+*/
+
+h1 {
+  text-align: center;
+  margin-bottom: 1.25rem;
+  text-transform: uppercase;
+}
+
+.pDay2 {
+  display: block;
+  font-size: 1.125rem;
+  margin-bottom: 0.3125rem;
+  text-align: center;
+}
+
+.spanDay2 {
+  font-weight: bold;
+  color: var(--span);
+  text-align: center;
+  text-transform: capitalize;
+}
+
+.Warning {
+  font-size: 0.875rem;
+  text-align: center;
+}
+
+.sP1day3,
+.sP2day3,
+.sP3day3,
+.s1Day4,
+.s2Day4 {
+  padding: 0.625rem;
+}
+
+/*
+  main
+*/
+
+main {
+  margin-top: 2.5rem;
+}
+
+.allDays {
+  display: flex;
+  flex-direction: column;
+}
+
+.daysLine {
+  gap: 0.625rem;
+  display: flex;
+  margin-top: 0.625rem;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.days {
+  width: 8.75rem;
+  font-size: 1.25rem;
+  font-weight: bold;
+  text-align: center;
+  padding-block: 3.75rem;
+  border-radius: 0.625rem;
+  text-transform: uppercase;
+  border: 0.0625rem solid var(--text);
+  transition: color 0.5s, border 1s, background 1s;
+}
+
+.days:hover {
+  color: var(--bgColor);
+  background: var(--span);
+  border: 0.0625rem solid var(--text);
+}
+
+.linkDays {
+  text-decoration: none;
+}
+
+a {
+  text-align: left;
+}
+
+.content {
+  gap: 0.625rem;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.inputDay1 {
+  cursor: text;
+  padding: 0.625rem;
+  text-align: center;
+  border-radius: 0.625rem;
+  border: 0.0625rem solid var(--text);
+}
+
+.inputDay5 {
+  margin-bottom: 1.25rem;
+}
+
+.btnBack {
+  cursor: pointer;
+  margin-left: 0.625rem;
+  border-radius: 0.5625rem;
+  background-color: var(--text);
+}
+
+.btnDay1 {
+  cursor: pointer;
+  margin-top: 0.625rem;
+  font-weight: bold;
+  padding: 0.625rem 3.125rem;
+  border-radius: 1.25rem;
+  color: var(--bgColor);
+  text-transform: uppercase;
+  background-color: var(--text);
+}
+
+/*
+  INPUT
+*/
+
+.alignProdutos {
+  gap: 0.625rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btnList {
+  cursor: pointer;
+  padding: 0.4375rem 0.625rem;
+  text-align: center;
+  color: var(--text);
+  border-radius: 0.3125rem;
+  margin-bottom: 1.25rem;
+  text-transform: capitalize;
+  border: 0.0625rem solid var(--text);
+}
+
+/*
+  LIST  
+*/
+
+ul {
+  list-style: none;
+  text-align: center;
+  text-transform: uppercase;
+}
